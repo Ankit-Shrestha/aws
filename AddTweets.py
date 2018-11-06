@@ -16,7 +16,7 @@ DBSession = sessionmaker(bind = engine)
 session = DBSession()
 #Accessing the CSV file encoding it with latin1. IF original CSV has latin characters,
 #then encode it.
-with open('/var/www/aws/WitBrag.csv',encoding ='latin1') as csvfile:
+with open('/var/www/aws/aws/WitBrag.csv',encoding ='latin1') as csvfile:
     reader = csv.DictReader(csvfile)
     for row in reader:
         # Each column of CSV file is being added to the columns of the table.
