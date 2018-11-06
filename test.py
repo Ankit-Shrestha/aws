@@ -26,6 +26,7 @@ Base.metadata.bind=engine
 session = scoped_session(sessionmaker(bind=engine))
 #session = DBSession()
 
+@app.route('/')
 @app.route('/twitterData/main')
 def main():
     return render_template('main.html')
