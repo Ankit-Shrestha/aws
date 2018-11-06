@@ -14,16 +14,16 @@ Base = declarative_base()
 class TwitterData(Base):
     __tablename__ = 'twitterdata'
     #Creating the columns for our table with respective datatypes.
-    Text = Column(String(2000))
-    Hashtags = Column(String(250))
-    FavCount = Column(String(10))
-    Language = Column(String(10))
-    Place = Column(String(100))
-    UserLocation = Column(String(100))
-    RetweetCount = Column(String(10))
-    Date = Column(String(100))
-    Sentiment = Column(String(300))
-    Polarity = Column(String(20))
+    Text = Column(String(20000))
+    Hashtags = Column(String(2500))
+    FavCount = Column(String(100))
+    Language = Column(String(100))
+    Place = Column(String(1000))
+    UserLocation = Column(String(1000))
+    RetweetCount = Column(String(100))
+    Date = Column(String(1000))
+    Sentiment = Column(String(3000))
+    Polarity = Column(String(200))
     id = Column(Integer, primary_key=True)
 
     # Function Declaration for Flask API.
